@@ -6,32 +6,44 @@
 //  Copyright (c) 2015 ImagineME. All rights reserved.
 //
 
+import Foundation
 import UIKit
+
 
 class RestaurantDataViewController: UIViewController, UIAlertViewDelegate,
     UINavigationControllerDelegate,
-UIImagePickerControllerDelegate {
+    UIImagePickerControllerDelegate {
 
     @IBOutlet weak var restImage1: UIImageView!
     @IBOutlet weak var restImage2: UIImageView!
     @IBOutlet weak var restImage3: UIImageView!
     @IBOutlet weak var restImage4: UIImageView!
     
-    @IBOutlet var buttonImages: [UIButton]!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet var buttonimage: [UIButton]!
+    
     var buttTAG = Int()
     
     @IBOutlet weak var numberOfDishesSwiped: UILabel!
     
+    var baseArray:[DishModel] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        println("\(PFUser.currentUser())")
         // Do any additional setup after loading the view.
         
-        // Setup buttons to load Ad images
-        for button in buttonImages {
-            button.addTarget(self, action: "buttImageTapped:", forControlEvents: UIControlEvents.TouchUpInside)
-        }
+        
+        let dish1 = DishModel(image: UIImage(named: "f1.jpg"))
+        let dish2 = DishModel(image: UIImage(named: "f2.jpg"))
+        let dish3 = DishModel(image: UIImage(named: "f4.jpg"))
+        
+        baseArray = [dish1, dish2, dish3, DishModel(image: UIImage(named: "f1")), DishModel(image: UIImage(named: "f1")), DishModel(image: UIImage(named: "f1"))]
+        println("\(baseArray)")
+      
+        
     }
 
     //Check to see if User is logged in; If not, head over to login
@@ -49,7 +61,9 @@ UIImagePickerControllerDelegate {
     func buttImageTapped(sender: UIButton) {
         var button = sender as UIButton
         buttTAG = button.tag
-        
+        println("\(buttTAG)")
+        println("\(button.tag)")
+       
         var alert = UIAlertView(title: "Dindr",
             message: "Add a Photo",
             delegate: self,
@@ -103,8 +117,37 @@ UIImagePickerControllerDelegate {
     }
 
 
+    @IBAction func editSpecialButtonTapped(sender: AnyObject) {
+        
+        println("Edit Specials Button Tapped!")
+        self.performSegueWithIdentifier("showSpecials", sender: self)
+    }
 
 
   
 
 }
+
+extension RestaurantDataViewController : UICollectionViewDataSource
+{
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return baseArray.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let thisDish = baseArray[indexPath.item]
+        
+        let cellIdentifier = "Dish"
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! RestCollectionViewCell
+        
+        cell.dishImage = thisDish.image
+        
+        return cell
+    }
+}
+
