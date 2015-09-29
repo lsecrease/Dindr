@@ -26,6 +26,11 @@ class RestaurantDataViewController: UIViewController, UIAlertViewDelegate,
     var buttTAG = Int()
     
     @IBOutlet weak var numberOfDishesSwiped: UILabel!
+    @IBOutlet weak var checkInTotal: UILabel!
+    @IBOutlet weak var usersInRadius: UILabel!
+    
+    
+    var swipeObj = PFObject(className: "")
     
     var baseArray:[DishModel] = []
     
@@ -35,6 +40,7 @@ class RestaurantDataViewController: UIViewController, UIAlertViewDelegate,
         println("\(PFUser.currentUser())")
         // Do any additional setup after loading the view.
         
+        //numberOfDishesSwiped.text = "\(swipeObj[])"
         
         let dish1 = DishModel(image: UIImage(named: "f1.jpg"))
         let dish2 = DishModel(image: UIImage(named: "f2.jpg"))
@@ -120,7 +126,7 @@ class RestaurantDataViewController: UIViewController, UIAlertViewDelegate,
     @IBAction func editSpecialButtonTapped(sender: AnyObject) {
         
         println("Edit Specials Button Tapped!")
-        self.performSegueWithIdentifier("showSpecials", sender: self)
+        self.performSegueWithIdentifier("showPerks", sender: self)
     }
 
 
