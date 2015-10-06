@@ -90,17 +90,19 @@ class LoginVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
 let hudView = UIView(frame: CGRectMake(0, 0, 80, 80))
 let indicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 80, 80))
 let spinImage = UIImageView(frame: CGRectMake(0, 0, 80, 80))
-extension UIView {
-    func showHUD(view: UIView) {
-        hudView.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
-        hudView.backgroundColor = UIColor.darkGrayColor()
-        hudView.alpha = 0.9
-        hudView.layer.cornerRadius = hudView.bounds.size.width/2
-        
-        indicatorView.center = CGPointMake(hudView.frame.size.width/2, hudView.frame.size.height/2)
-        indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge
-        hudView.addSubview(indicatorView)
-        indicatorView.startAnimating()
-        view.addSubview(hudView)
-    }
-}
+
+
+//extension UIView {
+//    func showHUD(view: UIView) {
+//        hudView.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
+//        hudView.backgroundColor = UIColor.darkGrayColor()
+//        hudView.alpha = 0.9
+//        hudView.layer.cornerRadius = hudView.bounds.size.width/2
+//        
+//        indicatorView.center = CGPointMake(hudView.frame.size.width/2, hudView.frame.size.height/2)
+//        indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge
+//        hudView.addSubview(indicatorView)
+//        indicatorView.startAnimating()
+//        view.addSubview(hudView)
+//    }
+//}

@@ -350,7 +350,7 @@
         <!--Gallery-->
         <scene sceneID="VRv-M3-YeE">
             <objects>
-                <viewController id="n8g-fo-OsD" sceneMemberID="viewController">
+                <viewController id="n8g-fo-OsD" customClass="GalleryVC" customModule="Dindr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k5Q-75-kRy"/>
                         <viewControllerLayoutGuide type="bottom" id="FSm-7H-8OL"/>
@@ -359,21 +359,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gallery VC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eg-q8-Zo3">
-                                <rect key="frame" x="147" y="154" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cIK-8c-mQG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.96852236986160278" green="0.96868795156478882" blue="0.96851187944412231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Emo-Qw-SYc">
+                                    <size key="itemSize" width="136" height="136"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCell" id="b62-8K-V1D" customClass="GalleryCell" customModule="Dindr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="136" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1" translatesAutoresizingMaskIntoConstraints="NO" id="DGK-Aq-rvl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="136"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="DGK-Aq-rvl" firstAttribute="top" secondItem="b62-8K-V1D" secondAttribute="top" id="2ik-Pt-apI"/>
+                                            <constraint firstAttribute="bottom" secondItem="DGK-Aq-rvl" secondAttribute="bottom" id="3jg-90-YkT"/>
+                                            <constraint firstItem="DGK-Aq-rvl" firstAttribute="leading" secondItem="b62-8K-V1D" secondAttribute="leading" id="GLb-Cq-pj0"/>
+                                            <constraint firstAttribute="trailing" secondItem="DGK-Aq-rvl" secondAttribute="trailing" id="GTa-6O-SCp"/>
+                                            <constraint firstAttribute="trailing" secondItem="DGK-Aq-rvl" secondAttribute="trailing" id="dAg-4p-2Bz"/>
+                                            <constraint firstItem="DGK-Aq-rvl" firstAttribute="top" secondItem="b62-8K-V1D" secondAttribute="top" id="mJ1-2y-FsA"/>
+                                            <constraint firstItem="DGK-Aq-rvl" firstAttribute="leading" secondItem="b62-8K-V1D" secondAttribute="leading" id="sWE-Im-1AM"/>
+                                            <constraint firstAttribute="bottom" secondItem="DGK-Aq-rvl" secondAttribute="bottom" id="u5G-jA-rhe"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3jg-90-YkT"/>
+                                                <exclude reference="GLb-Cq-pj0"/>
+                                                <exclude reference="dAg-4p-2Bz"/>
+                                                <exclude reference="mJ1-2y-FsA"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="galImage" destination="DGK-Aq-rvl" id="9pg-kF-pwy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="n8g-fo-OsD" id="SzP-PN-dDy"/>
+                                    <outlet property="delegate" destination="n8g-fo-OsD" id="hhk-EB-Obq"/>
+                                </connections>
+                            </collectionView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-dY-pOI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cIK-8c-mQG" secondAttribute="trailing" id="2Zl-kC-Mnc"/>
+                            <constraint firstItem="ekx-dY-pOI" firstAttribute="leading" secondItem="4Na-d2-0hx" secondAttribute="leading" id="31M-dM-dUK"/>
+                            <constraint firstAttribute="trailing" secondItem="ekx-dY-pOI" secondAttribute="trailing" id="Fsm-7y-p6B"/>
+                            <constraint firstItem="cIK-8c-mQG" firstAttribute="leading" secondItem="4Na-d2-0hx" secondAttribute="leading" id="Oad-EQ-wc3"/>
+                            <constraint firstItem="ekx-dY-pOI" firstAttribute="top" secondItem="4Na-d2-0hx" secondAttribute="top" id="R8s-Qm-7K6"/>
+                            <constraint firstAttribute="bottom" secondItem="cIK-8c-mQG" secondAttribute="bottom" id="a0z-3V-xPa"/>
+                            <constraint firstItem="cIK-8c-mQG" firstAttribute="top" secondItem="4Na-d2-0hx" secondAttribute="top" id="sj8-ep-ITP"/>
+                            <constraint firstAttribute="bottom" secondItem="ekx-dY-pOI" secondAttribute="bottom" id="wDT-hl-UZa"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="4" title="Gallery" id="gLF-zC-Gbg"/>
+                    <navigationItem key="navigationItem" title="Gallery" id="FmE-My-Pge"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="galleryCollView" destination="cIK-8c-mQG" id="Rmr-X5-4lH"/>
+                        <outlet property="imagePreviewView" destination="ekx-dY-pOI" id="9Bn-fh-Qc6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4D-BF-qA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="D4v-Ne-AKN">
+                    <connections>
+                        <action selector="tapToClosePreview:" destination="n8g-fo-OsD" id="7N9-bB-zlB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2130.5" y="1891.5"/>
+            <point key="canvasLocation" x="2942.5" y="1891.5"/>
         </scene>
         <!--Manage Account-->
         <scene sceneID="VOn-X4-pfs">
@@ -538,7 +606,7 @@
                         <segue destination="z1v-CH-54s" kind="relationship" relationship="viewControllers" id="XOH-o4-oN7"/>
                         <segue destination="a9i-qh-JkH" kind="relationship" relationship="viewControllers" id="uxh-bL-C00"/>
                         <segue destination="SM4-y3-xpt" kind="relationship" relationship="viewControllers" id="T5f-1A-8u1"/>
-                        <segue destination="n8g-fo-OsD" kind="relationship" relationship="viewControllers" id="BKf-Qu-7dC"/>
+                        <segue destination="MWN-8O-OxS" kind="relationship" relationship="viewControllers" id="BKf-Qu-7dC"/>
                         <segue destination="3Ow-Jt-5ix" kind="relationship" relationship="viewControllers" id="pTK-A7-tK4"/>
                     </connections>
                 </tabBarController>
@@ -565,9 +633,33 @@
             </objects>
             <point key="canvasLocation" x="2392" y="1148"/>
         </scene>
+        <!--Gallery-->
+        <scene sceneID="0kw-4h-9Lp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MWN-8O-OxS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Gallery" id="gLF-zC-Gbg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ci3-Ve-UeK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.65993356704711914" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n8g-fo-OsD" kind="relationship" relationship="rootViewController" id="zMa-WT-KjJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYW-LK-fzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2130" y="1891"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cam-1" width="30" height="30"/>
+        <image name="f1" width="924" height="693"/>
         <image name="f5" width="2048" height="1152"/>
         <image name="resticon" width="94" height="94"/>
         <image name="statbackground" width="187" height="170"/>
