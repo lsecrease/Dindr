@@ -474,7 +474,7 @@
         <!--Camera-->
         <scene sceneID="8uC-gG-KWm">
             <objects>
-                <viewController id="SM4-y3-xpt" sceneMemberID="viewController">
+                <viewController id="SM4-y3-xpt" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="86Y-B8-jto"/>
                         <viewControllerLayoutGuide type="bottom" id="KvM-UM-PNs"/>
@@ -486,10 +486,51 @@
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="Camera" image="cam-1" id="zUJ-Qh-kXg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="OCu-8m-Wig" kind="presentation" identifier="Show Image Preview" id="2vf-At-lQr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7s-He-2cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="549.5" y="1668.5"/>
+        </scene>
+        <!--Preview Image View Controller-->
+        <scene sceneID="hmx-yw-Bbg">
+            <objects>
+                <viewController id="OCu-8m-Wig" customClass="PreviewImageViewController" customModule="Dindr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VMF-bL-TCs"/>
+                        <viewControllerLayoutGuide type="bottom" id="rPa-cO-3Xd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3AV-vp-aDO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2K4-aD-3Yb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6h-Ty-NLA">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rPa-cO-3Xd" firstAttribute="top" secondItem="2K4-aD-3Yb" secondAttribute="bottom" id="A7D-qv-7Ia"/>
+                            <constraint firstItem="2K4-aD-3Yb" firstAttribute="leading" secondItem="3AV-vp-aDO" secondAttribute="leading" id="AxC-l6-yyt"/>
+                            <constraint firstItem="2K4-aD-3Yb" firstAttribute="top" secondItem="3AV-vp-aDO" secondAttribute="top" id="TJs-WD-q0x"/>
+                            <constraint firstAttribute="trailing" secondItem="2K4-aD-3Yb" secondAttribute="trailing" id="o5o-OW-u5d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="2K4-aD-3Yb" id="cWo-Qv-Vh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjH-0y-SCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491.5" y="2516.5"/>
         </scene>
         <!--Perks-->
         <scene sceneID="uaV-wT-OSC">
