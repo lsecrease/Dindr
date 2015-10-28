@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rsl-qe-JUq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--LoginVC-->
@@ -298,55 +299,6 @@
             </objects>
             <point key="canvasLocation" x="2130.5" y="224.5"/>
         </scene>
-        <!--Perks-->
-        <scene sceneID="hpV-1u-WzG">
-            <objects>
-                <viewController id="rZk-vx-Z9e" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yzN-7D-lNh"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZOu-kI-QTv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PvR-34-A4F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-ok-5SU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="3rX-aA-pzz">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3rX-aA-pzz" id="cLs-oa-W4b">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resticon" translatesAutoresizingMaskIntoConstraints="NO" id="3OC-UT-qHR">
-                                                    <rect key="frame" x="8" y="14" width="131" height="128"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perk Description label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlB-0V-wF5">
-                                                    <rect key="frame" x="147" y="14" width="150" height="21"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="rZk-vx-Z9e" id="RsB-T7-6rn"/>
-                                    <outlet property="delegate" destination="rZk-vx-Z9e" id="Qwz-6f-Byc"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Perks" id="d9y-Lq-Oak"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fx9-07-HaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3204.5" y="1148.5"/>
-        </scene>
         <!--Gallery-->
         <scene sceneID="VRv-M3-YeE">
             <objects>
@@ -443,6 +395,58 @@
             </objects>
             <point key="canvasLocation" x="2942.5" y="1891.5"/>
         </scene>
+        <!--Perks-->
+        <scene sceneID="wTz-wz-56V">
+            <objects>
+                <tableViewController id="MbD-2D-Sn3" customClass="SpecialsTableViewController" customModule="Dindr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="8Le-au-tMy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="dHF-ME-DAE" customClass="SpecialsTableViewCell" customModule="Dindr" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dHF-ME-DAE" id="Nkj-7n-qdM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perk Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tms-9A-knd">
+                                            <rect key="frame" x="136" y="25" width="135" height="25"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resticon2" translatesAutoresizingMaskIntoConstraints="NO" id="668-Fm-cUc">
+                                            <rect key="frame" x="16" y="25" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="Kde-FB-AAU"/>
+                                                <constraint firstAttribute="width" constant="100" id="ltp-xO-bxq"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="668-Fm-cUc" secondAttribute="centerY" constant="-0.5" id="Ul1-W2-esR"/>
+                                        <constraint firstItem="668-Fm-cUc" firstAttribute="leading" secondItem="Nkj-7n-qdM" secondAttribute="leadingMargin" constant="8" id="eQK-k4-GWH"/>
+                                        <constraint firstItem="tms-9A-knd" firstAttribute="leading" secondItem="668-Fm-cUc" secondAttribute="trailing" constant="20" id="hSF-qb-gbJ"/>
+                                        <constraint firstItem="tms-9A-knd" firstAttribute="top" secondItem="Nkj-7n-qdM" secondAttribute="topMargin" constant="17" id="rfx-Y6-aak"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="perkDescription" destination="tms-9A-knd" id="htr-z9-4bK"/>
+                                    <outlet property="perkImage" destination="668-Fm-cUc" id="TaI-Vg-fir"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MbD-2D-Sn3" id="DB1-Jp-oaG"/>
+                            <outlet property="delegate" destination="MbD-2D-Sn3" id="QX2-6D-VUQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Perks" id="Gzs-rq-kVw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LON-gU-7uR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2997.5" y="1113.5"/>
+        </scene>
         <!--Manage Account-->
         <scene sceneID="VOn-X4-pfs">
             <objects>
@@ -532,107 +536,6 @@
             </objects>
             <point key="canvasLocation" x="491.5" y="2516.5"/>
         </scene>
-        <!--Perks-->
-        <scene sceneID="uaV-wT-OSC">
-            <objects>
-                <tableViewController id="BHR-Ov-kbQ" customClass="SpecialsTableViewController" customModule="Dindr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Mwj-UT-3Gz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="eq2-yS-LYM">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="moU-ts-u4S">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="moU-ts-u4S" id="mDp-Gc-qHU">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resticon" translatesAutoresizingMaskIntoConstraints="NO" id="2bG-KY-cKd">
-                                                    <rect key="frame" x="8" y="32" width="140" height="140"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perk Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPq-Ze-mAh">
-                                                    <rect key="frame" x="156" y="32" width="120" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="xmb-q4-8J8">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xmb-q4-8J8" id="gnX-c1-guF">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resticon" translatesAutoresizingMaskIntoConstraints="NO" id="Bjg-f2-uMR">
-                                                    <rect key="frame" x="8" y="30" width="140" height="140"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perk Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLa-Cv-7Kg">
-                                                    <rect key="frame" x="156" y="30" width="120" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="Voi-2c-CBo">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Voi-2c-CBo" id="qbK-UG-e9R">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resticon" translatesAutoresizingMaskIntoConstraints="NO" id="Hvw-t6-nnq">
-                                                    <rect key="frame" x="8" y="30" width="140" height="140"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perk Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIT-ON-Qo1">
-                                                    <rect key="frame" x="156" y="30" width="120" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="BHR-Ov-kbQ" id="sqJ-GQ-ZVV"/>
-                            <outlet property="delegate" destination="BHR-Ov-kbQ" id="8Le-pR-8Ln"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Perks" id="Mmz-3w-GKj">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ms2-db-AHW">
-                            <connections>
-                                <action selector="backButtonTapped:" destination="BHR-Ov-kbQ" id="G65-KG-efz"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1gU-VS-LP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3226.5" y="224.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XMQ-X1-lwZ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sb4-NT-teq" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B2l-bq-JpY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BHR-Ov-kbQ" kind="relationship" relationship="rootViewController" id="4q7-qI-ei3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="56M-zj-ngm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2698" y="225"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QhT-jU-uki">
             <objects>
@@ -667,7 +570,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="rZk-vx-Z9e" kind="relationship" relationship="rootViewController" id="3io-ZJ-Qlm"/>
+                        <segue destination="MbD-2D-Sn3" kind="relationship" relationship="rootViewController" id="Rv9-pK-O8X"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1R-UZ-goi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -703,6 +606,7 @@
         <image name="f1" width="924" height="693"/>
         <image name="f5" width="2048" height="1152"/>
         <image name="resticon" width="94" height="94"/>
+        <image name="resticon2" width="94" height="94"/>
         <image name="statbackground" width="187" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>
