@@ -7,36 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C3CC95A0FD277442D18636 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD47978D1A71FA67A7B636A8 /* libPods.a */; };
-		CE5AF7AC1B7B09C00015F8F8 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF78E1B7B09C00015F8F8 /* AsyncButton.swift */; };
-		CE5AF7AD1B7B09C00015F8F8 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF78F1B7B09C00015F8F8 /* AsyncImageView.swift */; };
-		CE5AF7AE1B7B09C00015F8F8 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7901B7B09C00015F8F8 /* AutoTextView.swift */; };
-		CE5AF7AF1B7B09C00015F8F8 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7911B7B09C00015F8F8 /* BlurView.swift */; };
-		CE5AF7B01B7B09C00015F8F8 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7921B7B09C00015F8F8 /* DesignableButton.swift */; };
-		CE5AF7B11B7B09C00015F8F8 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7931B7B09C00015F8F8 /* DesignableImageView.swift */; };
-		CE5AF7B21B7B09C00015F8F8 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7941B7B09C00015F8F8 /* DesignableLabel.swift */; };
-		CE5AF7B31B7B09C00015F8F8 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7951B7B09C00015F8F8 /* DesignableTabBarController.swift */; };
-		CE5AF7B41B7B09C00015F8F8 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7961B7B09C00015F8F8 /* DesignableTextField.swift */; };
-		CE5AF7B51B7B09C00015F8F8 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7971B7B09C00015F8F8 /* DesignableTextView.swift */; };
-		CE5AF7B61B7B09C00015F8F8 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7981B7B09C00015F8F8 /* DesignableView.swift */; };
-		CE5AF7B71B7B09C00015F8F8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7991B7B09C00015F8F8 /* ImageLoader.swift */; };
-		CE5AF7B81B7B09C00015F8F8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5AF79A1B7B09C00015F8F8 /* Info.plist */; };
-		CE5AF7B91B7B09C00015F8F8 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF79B1B7B09C00015F8F8 /* KeyboardLayoutConstraint.swift */; };
-		CE5AF7BA1B7B09C00015F8F8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF79C1B7B09C00015F8F8 /* LoadingView.swift */; };
-		CE5AF7BB1B7B09C00015F8F8 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5AF79D1B7B09C00015F8F8 /* LoadingView.xib */; };
-		CE5AF7BC1B7B09C00015F8F8 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF79E1B7B09C00015F8F8 /* Misc.swift */; };
-		CE5AF7BD1B7B09C00015F8F8 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF79F1B7B09C00015F8F8 /* SoundPlayer.swift */; };
-		CE5AF7BE1B7B09C00015F8F8 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A11B7B09C00015F8F8 /* Spring.swift */; };
-		CE5AF7BF1B7B09C00015F8F8 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A21B7B09C00015F8F8 /* SpringAnimation.swift */; };
-		CE5AF7C01B7B09C00015F8F8 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A31B7B09C00015F8F8 /* SpringButton.swift */; };
-		CE5AF7C11B7B09C00015F8F8 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A41B7B09C00015F8F8 /* SpringImageView.swift */; };
-		CE5AF7C21B7B09C00015F8F8 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A51B7B09C00015F8F8 /* SpringLabel.swift */; };
-		CE5AF7C31B7B09C00015F8F8 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A61B7B09C00015F8F8 /* SpringTextField.swift */; };
-		CE5AF7C41B7B09C00015F8F8 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A71B7B09C00015F8F8 /* SpringTextView.swift */; };
-		CE5AF7C51B7B09C00015F8F8 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A81B7B09C00015F8F8 /* SpringView.swift */; };
-		CE5AF7C61B7B09C00015F8F8 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7A91B7B09C00015F8F8 /* TransitionManager.swift */; };
-		CE5AF7C71B7B09C00015F8F8 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7AA1B7B09C00015F8F8 /* TransitionZoom.swift */; };
-		CE5AF7C81B7B09C00015F8F8 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AF7AB1B7B09C00015F8F8 /* UnwindSegue.swift */; };
+		3C42861E034DE096D4E14F38 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF4DC640378868359B62E40 /* Pods.framework */; };
 		CE9F9EEF1B802C1B0060D993 /* RestaurantDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F9EEE1B802C1B0060D993 /* RestaurantDataViewController.swift */; };
 		CEB8897A1B7858A000B28A90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB889791B7858A000B28A90 /* AudioToolbox.framework */; };
 		CEB8897C1B7858A500B28A90 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB8897B1B7858A500B28A90 /* CFNetwork.framework */; };
@@ -68,38 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DF4DC640378868359B62E40 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06A68F49A5B1C70F5C4D28D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A16574C15E406AC410350BB4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		CE5AF78E1B7B09C00015F8F8 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
-		CE5AF78F1B7B09C00015F8F8 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
-		CE5AF7901B7B09C00015F8F8 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
-		CE5AF7911B7B09C00015F8F8 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
-		CE5AF7921B7B09C00015F8F8 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
-		CE5AF7931B7B09C00015F8F8 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
-		CE5AF7941B7B09C00015F8F8 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
-		CE5AF7951B7B09C00015F8F8 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
-		CE5AF7961B7B09C00015F8F8 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
-		CE5AF7971B7B09C00015F8F8 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
-		CE5AF7981B7B09C00015F8F8 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
-		CE5AF7991B7B09C00015F8F8 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		CE5AF79A1B7B09C00015F8F8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE5AF79B1B7B09C00015F8F8 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
-		CE5AF79C1B7B09C00015F8F8 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		CE5AF79D1B7B09C00015F8F8 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
-		CE5AF79E1B7B09C00015F8F8 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
-		CE5AF79F1B7B09C00015F8F8 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
-		CE5AF7A01B7B09C00015F8F8 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
-		CE5AF7A11B7B09C00015F8F8 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
-		CE5AF7A21B7B09C00015F8F8 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
-		CE5AF7A31B7B09C00015F8F8 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
-		CE5AF7A41B7B09C00015F8F8 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
-		CE5AF7A51B7B09C00015F8F8 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
-		CE5AF7A61B7B09C00015F8F8 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
-		CE5AF7A71B7B09C00015F8F8 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
-		CE5AF7A81B7B09C00015F8F8 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
-		CE5AF7A91B7B09C00015F8F8 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
-		CE5AF7AA1B7B09C00015F8F8 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
-		CE5AF7AB1B7B09C00015F8F8 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		CE9F9EEE1B802C1B0060D993 /* RestaurantDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDataViewController.swift; sourceTree = "<group>"; };
 		CEB889791B7858A000B28A90 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CEB8897B1B7858A500B28A90 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -123,7 +65,6 @@
 		CEC9F21C1B7851B3000A74A9 /* DindrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DindrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9F2211B7851B3000A74A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC9F2221B7851B3000A74A9 /* DindrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DindrTests.swift; sourceTree = "<group>"; };
-		FD47978D1A71FA67A7B636A8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +83,7 @@
 				CEB8897E1B7858B300B28A90 /* CoreGraphics.framework in Frameworks */,
 				CEB8897C1B7858A500B28A90 /* CFNetwork.framework in Frameworks */,
 				CEB8897A1B7858A000B28A90 /* AudioToolbox.framework in Frameworks */,
-				00C3CC95A0FD277442D18636 /* libPods.a in Frameworks */,
+				3C42861E034DE096D4E14F38 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,46 +111,9 @@
 				CEB8897D1B7858B300B28A90 /* CoreGraphics.framework */,
 				CEB8897B1B7858A500B28A90 /* CFNetwork.framework */,
 				CEB889791B7858A000B28A90 /* AudioToolbox.framework */,
-				FD47978D1A71FA67A7B636A8 /* libPods.a */,
+				1DF4DC640378868359B62E40 /* Pods.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE5AF78D1B7B09C00015F8F8 /* Spring */ = {
-			isa = PBXGroup;
-			children = (
-				CE5AF78E1B7B09C00015F8F8 /* AsyncButton.swift */,
-				CE5AF78F1B7B09C00015F8F8 /* AsyncImageView.swift */,
-				CE5AF7901B7B09C00015F8F8 /* AutoTextView.swift */,
-				CE5AF7911B7B09C00015F8F8 /* BlurView.swift */,
-				CE5AF7921B7B09C00015F8F8 /* DesignableButton.swift */,
-				CE5AF7931B7B09C00015F8F8 /* DesignableImageView.swift */,
-				CE5AF7941B7B09C00015F8F8 /* DesignableLabel.swift */,
-				CE5AF7951B7B09C00015F8F8 /* DesignableTabBarController.swift */,
-				CE5AF7961B7B09C00015F8F8 /* DesignableTextField.swift */,
-				CE5AF7971B7B09C00015F8F8 /* DesignableTextView.swift */,
-				CE5AF7981B7B09C00015F8F8 /* DesignableView.swift */,
-				CE5AF7991B7B09C00015F8F8 /* ImageLoader.swift */,
-				CE5AF79A1B7B09C00015F8F8 /* Info.plist */,
-				CE5AF79B1B7B09C00015F8F8 /* KeyboardLayoutConstraint.swift */,
-				CE5AF79C1B7B09C00015F8F8 /* LoadingView.swift */,
-				CE5AF79D1B7B09C00015F8F8 /* LoadingView.xib */,
-				CE5AF79E1B7B09C00015F8F8 /* Misc.swift */,
-				CE5AF79F1B7B09C00015F8F8 /* SoundPlayer.swift */,
-				CE5AF7A01B7B09C00015F8F8 /* Spring.h */,
-				CE5AF7A11B7B09C00015F8F8 /* Spring.swift */,
-				CE5AF7A21B7B09C00015F8F8 /* SpringAnimation.swift */,
-				CE5AF7A31B7B09C00015F8F8 /* SpringButton.swift */,
-				CE5AF7A41B7B09C00015F8F8 /* SpringImageView.swift */,
-				CE5AF7A51B7B09C00015F8F8 /* SpringLabel.swift */,
-				CE5AF7A61B7B09C00015F8F8 /* SpringTextField.swift */,
-				CE5AF7A71B7B09C00015F8F8 /* SpringTextView.swift */,
-				CE5AF7A81B7B09C00015F8F8 /* SpringView.swift */,
-				CE5AF7A91B7B09C00015F8F8 /* TransitionManager.swift */,
-				CE5AF7AA1B7B09C00015F8F8 /* TransitionZoom.swift */,
-				CE5AF7AB1B7B09C00015F8F8 /* UnwindSegue.swift */,
-			);
-			path = Spring;
 			sourceTree = "<group>";
 		};
 		CEC9F1FE1B7851B3000A74A9 = {
@@ -235,7 +139,6 @@
 		CEC9F2091B7851B3000A74A9 /* Dindr */ = {
 			isa = PBXGroup;
 			children = (
-				CE5AF78D1B7B09C00015F8F8 /* Spring */,
 				CEC9F20C1B7851B3000A74A9 /* AppDelegate.swift */,
 				CEBA3B511B7FB261009AE917 /* LoginVC.swift */,
 				CE9F9EEE1B802C1B0060D993 /* RestaurantDataViewController.swift */,
@@ -329,7 +232,9 @@
 		CEC9F1FF1B7851B3000A74A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = ImagineME;
 				TargetAttributes = {
 					CEC9F2061B7851B3000A74A9 = {
@@ -365,11 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5AF7B81B7B09C00015F8F8 /* Info.plist in Resources */,
 				CEC9F2121B7851B3000A74A9 /* Main.storyboard in Resources */,
 				CEC9F2171B7851B3000A74A9 /* LaunchScreen.xib in Resources */,
 				CEC9F2141B7851B3000A74A9 /* Images.xcassets in Resources */,
-				CE5AF7BB1B7B09C00015F8F8 /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,36 +338,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5AF7C21B7B09C00015F8F8 /* SpringLabel.swift in Sources */,
-				CE5AF7B71B7B09C00015F8F8 /* ImageLoader.swift in Sources */,
-				CE5AF7BC1B7B09C00015F8F8 /* Misc.swift in Sources */,
-				CE5AF7B11B7B09C00015F8F8 /* DesignableImageView.swift in Sources */,
-				CE5AF7C11B7B09C00015F8F8 /* SpringImageView.swift in Sources */,
-				CE5AF7BD1B7B09C00015F8F8 /* SoundPlayer.swift in Sources */,
-				CE5AF7C41B7B09C00015F8F8 /* SpringTextView.swift in Sources */,
 				CE9F9EEF1B802C1B0060D993 /* RestaurantDataViewController.swift in Sources */,
 				CEC9F20D1B7851B3000A74A9 /* AppDelegate.swift in Sources */,
-				CE5AF7B61B7B09C00015F8F8 /* DesignableView.swift in Sources */,
-				CE5AF7BF1B7B09C00015F8F8 /* SpringAnimation.swift in Sources */,
-				CE5AF7BE1B7B09C00015F8F8 /* Spring.swift in Sources */,
-				CE5AF7BA1B7B09C00015F8F8 /* LoadingView.swift in Sources */,
-				CE5AF7C31B7B09C00015F8F8 /* SpringTextField.swift in Sources */,
-				CE5AF7B01B7B09C00015F8F8 /* DesignableButton.swift in Sources */,
-				CE5AF7B41B7B09C00015F8F8 /* DesignableTextField.swift in Sources */,
-				CE5AF7AC1B7B09C00015F8F8 /* AsyncButton.swift in Sources */,
 				CEBA3B521B7FB261009AE917 /* LoginVC.swift in Sources */,
-				CE5AF7B91B7B09C00015F8F8 /* KeyboardLayoutConstraint.swift in Sources */,
-				CE5AF7C01B7B09C00015F8F8 /* SpringButton.swift in Sources */,
-				CE5AF7AD1B7B09C00015F8F8 /* AsyncImageView.swift in Sources */,
-				CE5AF7B31B7B09C00015F8F8 /* DesignableTabBarController.swift in Sources */,
-				CE5AF7AE1B7B09C00015F8F8 /* AutoTextView.swift in Sources */,
-				CE5AF7B51B7B09C00015F8F8 /* DesignableTextView.swift in Sources */,
-				CE5AF7B21B7B09C00015F8F8 /* DesignableLabel.swift in Sources */,
-				CE5AF7C81B7B09C00015F8F8 /* UnwindSegue.swift in Sources */,
-				CE5AF7C61B7B09C00015F8F8 /* TransitionManager.swift in Sources */,
-				CE5AF7AF1B7B09C00015F8F8 /* BlurView.swift in Sources */,
-				CE5AF7C51B7B09C00015F8F8 /* SpringView.swift in Sources */,
-				CE5AF7C71B7B09C00015F8F8 /* TransitionZoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +403,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -595,6 +472,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ImagineME.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Dindr/Dindr-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -609,6 +487,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dindr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ImagineME.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Dindr/Dindr-Bridging-Header.h";
 			};
@@ -628,6 +507,7 @@
 				);
 				INFOPLIST_FILE = DindrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ImagineME.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dindr.app/Dindr";
 			};
@@ -643,6 +523,7 @@
 				);
 				INFOPLIST_FILE = DindrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ImagineME.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dindr.app/Dindr";
 			};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class RestaurantDataViewController: UIViewController, UIAlertViewDelegate,
     UINavigationControllerDelegate,
@@ -47,10 +48,10 @@ UIImagePickerControllerDelegate {
     
     // BUTTON FOR IMAGES
     func buttImageTapped(sender: UIButton) {
-        var button = sender as UIButton
+        let button = sender as UIButton
         buttTAG = button.tag
         
-        var alert = UIAlertView(title: "Dindr",
+        let alert = UIAlertView(title: "Dindr",
             message: "Add a Photo",
             delegate: self,
             cancelButtonTitle: "Cancel",
@@ -68,7 +69,7 @@ UIImagePickerControllerDelegate {
         // OPEN DEVICE'S CAMERA
         if alertView.buttonTitleAtIndex(buttonIndex) == "Take a picture" {
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
-                var imagePicker = UIImagePickerController()
+                let imagePicker = UIImagePickerController()
                 imagePicker.delegate = self
                 imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
                 imagePicker.allowsEditing = false
@@ -79,7 +80,7 @@ UIImagePickerControllerDelegate {
             // PICK A PHOTO FROM LIBRARY
         } else if alertView.buttonTitleAtIndex(buttonIndex) == "Choose from Library" {
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
-                var imagePicker = UIImagePickerController()
+                let imagePicker = UIImagePickerController()
                 imagePicker.delegate = self
                 imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary;
                 imagePicker.allowsEditing = false

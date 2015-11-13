@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Spring
+import Parse
 
 class LoginVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
 
@@ -28,26 +30,34 @@ class LoginVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
     }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        println("Login Button Pressed")
+        print("Login Button Pressed")
         loginButton.animation = "pop"
         loginButton.animate()
         
-        var username = usernameTextField.text
-        var password = passwordTextField.text
+        guard let username = usernameTextField.text, password = passwordTextField.text else {
+            // TODO: add alert
+            showAlertWithMessage("Please fill in both username and password fields")
+            return
+        }
         
         passwordTextField.resignFirstResponder()
         
         view.showHUD(view)
         
-        PFUser.logInWithUsernameInBackground(usernameTextField.text, password:passwordTextField.text) {
+        PFUser.logInWithUsernameInBackground(username, password:password) {
             (user, error) -> Void in
             
             if user != nil { // Login successfull
                 self.dismissViewControllerAnimated(true, completion: nil)
                 hudView.removeFromSuperview()
-                println("Successful Login")
+                print("Successful Login")
                 
-            } else { // Login failed. Try again or SignUp
+            } else {
+                
+                // Login failed. Try again or SignUp
+                // TODO: sign up doesn't seem to go anywhere
+                // TODO: also UIAlertView is deprecated, this needs to be changed to UIAlertController
+                // TODO: see below for an example
                 let alert = UIAlertView(title: "Dindr",
                     message: "\(error!.localizedDescription)",
                     delegate: self,
@@ -61,7 +71,15 @@ class LoginVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
 
     }
     
-
+    func showAlertWithMessage(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        
+        alert.addAction(okAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
     
     
