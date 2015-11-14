@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EACED2723BB5600B88834009D10CCB8CD2946702",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EACED2723BB5600B88834009D10CCB8CD2946702" : 0,
+    "3CE173A00AFA646F21499F4BA53E756FEAEB54D6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "637F2BFC-C9BA-434D-A08A-479B2E1C1C63",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EACED2723BB5600B88834009D10CCB8CD2946702" : "Dindr\/",
+    "3CE173A00AFA646F21499F4BA53E756FEAEB54D6" : "Dindr\/Dindr\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Dindr",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Dindr.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lsecrease\/Dindr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CE173A00AFA646F21499F4BA53E756FEAEB54D6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JBader89\/RestaurantDindr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EACED2723BB5600B88834009D10CCB8CD2946702"
+    }
+  ]
+}
