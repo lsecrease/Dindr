@@ -512,27 +512,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell Us more about your Perk!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnK-FD-NY6">
-                                <rect key="frame" x="59" y="178" width="257" height="25"/>
+                                <rect key="frame" x="59" y="115" width="257" height="25"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="This is the description of the Perk, etc., etc." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mug-WA-eKn">
-                                <rect key="frame" x="8" y="233" width="359" height="100"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="This is the description of the Perk, etc., etc." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mug-WA-eKn">
+                                <rect key="frame" x="16" y="148" width="343" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="4VJ-8n-or3"/>
+                                    <constraint firstAttribute="height" constant="150" id="fhQ-jz-8ec"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4VJ-8n-or3"/>
+                                    </mask>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mug-WA-eKn" secondAttribute="trailing" constant="-4" id="43m-uA-DUC"/>
+                            <constraint firstItem="mug-WA-eKn" firstAttribute="leading" secondItem="5b2-eD-Rvy" secondAttribute="leadingMargin" id="6Kc-io-NI2"/>
                             <constraint firstItem="mug-WA-eKn" firstAttribute="top" secondItem="bnK-FD-NY6" secondAttribute="bottom" constant="30" id="7Aq-fm-fkr"/>
+                            <constraint firstItem="mug-WA-eKn" firstAttribute="centerX" secondItem="5b2-eD-Rvy" secondAttribute="centerX" id="Exd-pr-9TS"/>
+                            <constraint firstItem="mug-WA-eKn" firstAttribute="leading" secondItem="5b2-eD-Rvy" secondAttribute="leadingMargin" constant="-4" id="Gor-We-FKb"/>
+                            <constraint firstItem="bnK-FD-NY6" firstAttribute="top" secondItem="Tvj-yp-1jg" secondAttribute="bottom" constant="51" id="Ihw-uP-77U"/>
                             <constraint firstItem="bnK-FD-NY6" firstAttribute="centerX" secondItem="5b2-eD-Rvy" secondAttribute="centerX" id="aKP-fQ-hMg"/>
+                            <constraint firstItem="mug-WA-eKn" firstAttribute="top" secondItem="bnK-FD-NY6" secondAttribute="bottom" constant="8" id="bMZ-ZU-FQK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mug-WA-eKn" secondAttribute="trailing" constant="-12" id="cta-ME-3Gc"/>
+                            <constraint firstItem="ZUe-Zv-0bA" firstAttribute="top" secondItem="mug-WA-eKn" secondAttribute="bottom" constant="468" id="jpP-56-nM1"/>
                             <constraint firstItem="bnK-FD-NY6" firstAttribute="top" secondItem="Tvj-yp-1jg" secondAttribute="bottom" constant="114" id="kfP-6t-Y0M"/>
+                            <constraint firstItem="mug-WA-eKn" firstAttribute="top" secondItem="bnK-FD-NY6" secondAttribute="bottom" constant="8" id="ocA-0y-zP4"/>
                             <constraint firstItem="mug-WA-eKn" firstAttribute="leading" secondItem="5b2-eD-Rvy" secondAttribute="leadingMargin" constant="-12" id="ruf-rL-zQ6"/>
+                            <constraint firstItem="mug-WA-eKn" firstAttribute="top" secondItem="bnK-FD-NY6" secondAttribute="bottom" constant="8" symbolic="YES" id="zM6-dR-5pV"/>
+                            <constraint firstItem="mug-WA-eKn" firstAttribute="leading" secondItem="5b2-eD-Rvy" secondAttribute="leadingMargin" constant="-4" id="zdy-pM-2QC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kfP-6t-Y0M"/>
+                                <exclude reference="43m-uA-DUC"/>
+                                <exclude reference="7Aq-fm-fkr"/>
+                                <exclude reference="Gor-We-FKb"/>
+                                <exclude reference="bMZ-ZU-FQK"/>
+                                <exclude reference="cta-ME-3Gc"/>
+                                <exclude reference="ocA-0y-zP4"/>
+                                <exclude reference="ruf-rL-zQ6"/>
+                                <exclude reference="zdy-pM-2QC"/>
+                                <exclude reference="jpP-56-nM1"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Perk" id="QVW-YV-wKd">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="JuL-pj-25H">
@@ -540,10 +570,32 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="hideKeyboardInputAccessoryView" destination="I4k-Cd-4fq" id="OE7-gx-d1m"/>
                         <outlet property="perkDescriptionTextView" destination="mug-WA-eKn" id="zrZ-y4-zJb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4D9-gz-d43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="I4k-Cd-4fq" userLabel="HideKeyboardInputAccessoryView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-Nl-5gh">
+                            <rect key="frame" x="337" y="2" width="30" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="O1M-GK-UcR"/>
+                                <constraint firstAttribute="height" constant="26" id="Oik-t1-wci"/>
+                            </constraints>
+                            <state key="normal" image="HideKeyboardButton"/>
+                            <connections>
+                                <action selector="hideKeyboard" destination="96o-aS-uNg" eventType="touchUpInside" id="81X-gf-j5r"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dgL-Nl-5gh" secondAttribute="trailing" constant="8" id="Kr3-0P-gDh"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="4460.5" y="1079.5"/>
         </scene>
@@ -792,6 +844,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HideKeyboardButton" width="53" height="55"/>
         <image name="cam-1" width="30" height="30"/>
         <image name="f1" width="924" height="693"/>
         <image name="f5" width="2048" height="1152"/>

@@ -179,6 +179,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		284186771BF817250071DAB5 /* ManageAccount */ = {
+			isa = PBXGroup;
+			children = (
+				28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */,
+			);
+			name = ManageAccount;
+			sourceTree = "<group>";
+		};
+		284186781BF8173C0071DAB5 /* Perks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF5DA31BA8B55F0077769E /* SpecialsTableViewController.swift */,
+				CE2D49C01BE06D28007DCBE3 /* SpecialsTableViewCell.swift */,
+				28C5C2A41BF7F0B2000647A5 /* EditSpecialsViewController.swift */,
+			);
+			name = Perks;
+			sourceTree = "<group>";
+		};
 		CE46054B1BC33FAF007A2B7D /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,13 +300,11 @@
 				CE9C42F01BC1D36000504B69 /* Login */,
 				CE9F9EEE1B802C1B0060D993 /* RestaurantDataViewController.swift */,
 				CEEF5D9F1BA8A7610077769E /* RestCollectionViewCell.swift */,
-				CEEF5DA31BA8B55F0077769E /* SpecialsTableViewController.swift */,
-				CE2D49C01BE06D28007DCBE3 /* SpecialsTableViewCell.swift */,
-				28C5C2A41BF7F0B2000647A5 /* EditSpecialsViewController.swift */,
+				284186781BF8173C0071DAB5 /* Perks */,
 				CE46054B1BC33FAF007A2B7D /* Gallery */,
 				CEEF5DA11BA8A8BF0077769E /* DishModel.swift */,
 				CEB40ED71BD6BCE700863F60 /* PreviewImageViewController.swift */,
-				28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */,
+				284186771BF817250071DAB5 /* ManageAccount */,
 				CEC9F2101B7851B3000A74A9 /* Main.storyboard */,
 				CEC9F2131B7851B3000A74A9 /* Images.xcassets */,
 				CEC9F2151B7851B3000A74A9 /* LaunchScreen.xib */,
