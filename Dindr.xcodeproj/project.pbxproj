@@ -197,6 +197,15 @@
 			name = Perks;
 			sourceTree = "<group>";
 		};
+		284186791BF820200071DAB5 /* Metrics */ = {
+			isa = PBXGroup;
+			children = (
+				CE9F9EEE1B802C1B0060D993 /* RestaurantDataViewController.swift */,
+				CEEF5D9F1BA8A7610077769E /* RestCollectionViewCell.swift */,
+			);
+			name = Metrics;
+			sourceTree = "<group>";
+		};
 		CE46054B1BC33FAF007A2B7D /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,8 +307,7 @@
 				CEB40ED61BD6BAA700863F60 /* LLSimpleCamera */,
 				CEC9F20C1B7851B3000A74A9 /* AppDelegate.swift */,
 				CE9C42F01BC1D36000504B69 /* Login */,
-				CE9F9EEE1B802C1B0060D993 /* RestaurantDataViewController.swift */,
-				CEEF5D9F1BA8A7610077769E /* RestCollectionViewCell.swift */,
+				284186791BF820200071DAB5 /* Metrics */,
 				284186781BF8173C0071DAB5 /* Perks */,
 				CE46054B1BC33FAF007A2B7D /* Gallery */,
 				CEEF5DA11BA8A8BF0077769E /* DishModel.swift */,
