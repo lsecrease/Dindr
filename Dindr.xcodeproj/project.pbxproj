@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28C5C2A51BF7F0B2000647A5 /* EditSpecialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5C2A41BF7F0B2000647A5 /* EditSpecialsViewController.swift */; };
+		28C5C2A71BF80204000647A5 /* ManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */; };
 		A220C6DAAB6AF6BECEAE4045 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EF77CB6F97A26FE14C38AE /* Pods.framework */; };
 		CE2D49C11BE06D28007DCBE3 /* SpecialsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D49C01BE06D28007DCBE3 /* SpecialsTableViewCell.swift */; };
 		CE4605481BC33AB1007A2B7D /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4605471BC33AB1007A2B7D /* GalleryVC.swift */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28C5C2A41BF7F0B2000647A5 /* EditSpecialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSpecialsViewController.swift; sourceTree = "<group>"; };
+		28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageAccountViewController.swift; sourceTree = "<group>"; };
 		A06A68F49A5B1C70F5C4D28D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A16574C15E406AC410350BB4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B9EF77CB6F97A26FE14C38AE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,9 +284,11 @@
 				CEEF5D9F1BA8A7610077769E /* RestCollectionViewCell.swift */,
 				CEEF5DA31BA8B55F0077769E /* SpecialsTableViewController.swift */,
 				CE2D49C01BE06D28007DCBE3 /* SpecialsTableViewCell.swift */,
+				28C5C2A41BF7F0B2000647A5 /* EditSpecialsViewController.swift */,
 				CE46054B1BC33FAF007A2B7D /* Gallery */,
 				CEEF5DA11BA8A8BF0077769E /* DishModel.swift */,
 				CEB40ED71BD6BCE700863F60 /* PreviewImageViewController.swift */,
+				28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */,
 				CEC9F2101B7851B3000A74A9 /* Main.storyboard */,
 				CEC9F2131B7851B3000A74A9 /* Images.xcassets */,
 				CEC9F2151B7851B3000A74A9 /* LaunchScreen.xib */,
@@ -481,8 +487,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28C5C2A51BF7F0B2000647A5 /* EditSpecialsViewController.swift in Sources */,
 				CE9C43031BC1D6CD00504B69 /* ImagePreviewTableViewCell.swift in Sources */,
 				CEEF5DA21BA8A8BF0077769E /* DishModel.swift in Sources */,
+				28C5C2A71BF80204000647A5 /* ManageAccountViewController.swift in Sources */,
 				CEB40EC81BD6BA3C00863F60 /* ViewUtils.m in Sources */,
 				CEB40ED51BD6BA9C00863F60 /* LLSimpleCamera.m in Sources */,
 				CE9C43011BC1D6CD00504B69 /* ImagePickerSheetController.swift in Sources */,
