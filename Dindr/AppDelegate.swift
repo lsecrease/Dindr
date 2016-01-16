@@ -3,7 +3,7 @@
 //  Dindr
 //
 //  Created by lsecrease on 8/9/15.
-//  Copyright (c) 2015 ImagineME. All rights reserved.
+//  Copyright (c) 2015 Dindr. All rights reserved.
 //
 
 import UIKit
