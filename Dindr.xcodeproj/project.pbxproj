@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28C5C2A71BF80204000647A5 /* ManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */; };
 		A220C6DAAB6AF6BECEAE4045 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EF77CB6F97A26FE14C38AE /* Pods.framework */; };
+		CE0031781C4DBE3F00037BAD /* ManageAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0031771C4DBE3F00037BAD /* ManageAccountTableViewController.swift */; };
 		CE4605481BC33AB1007A2B7D /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4605471BC33AB1007A2B7D /* GalleryVC.swift */; };
 		CE46054A1BC33FA7007A2B7D /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4605491BC33FA7007A2B7D /* GalleryCell.swift */; };
 		CE9C42FD1BC1D6CD00504B69 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C42F21BC1D6CD00504B69 /* AnimationController.swift */; };
@@ -63,10 +63,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageAccountViewController.swift; sourceTree = "<group>"; };
 		A06A68F49A5B1C70F5C4D28D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A16574C15E406AC410350BB4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B9EF77CB6F97A26FE14C38AE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0031771C4DBE3F00037BAD /* ManageAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageAccountTableViewController.swift; sourceTree = "<group>"; };
 		CE4605471BC33AB1007A2B7D /* GalleryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
 		CE4605491BC33FA7007A2B7D /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		CE9C42F21BC1D6CD00504B69 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		284186771BF817250071DAB5 /* ManageAccount */ = {
 			isa = PBXGroup;
 			children = (
-				28C5C2A61BF80204000647A5 /* ManageAccountViewController.swift */,
+				CE0031771C4DBE3F00037BAD /* ManageAccountTableViewController.swift */,
 			);
 			name = ManageAccount;
 			sourceTree = "<group>";
@@ -496,7 +496,6 @@
 			files = (
 				CE9C43031BC1D6CD00504B69 /* ImagePreviewTableViewCell.swift in Sources */,
 				CEEF5DA21BA8A8BF0077769E /* DishModel.swift in Sources */,
-				28C5C2A71BF80204000647A5 /* ManageAccountViewController.swift in Sources */,
 				CEB40EC81BD6BA3C00863F60 /* ViewUtils.m in Sources */,
 				CEB40ED51BD6BA9C00863F60 /* LLSimpleCamera.m in Sources */,
 				CE9C43011BC1D6CD00504B69 /* ImagePickerSheetController.swift in Sources */,
@@ -505,6 +504,7 @@
 				CE46054A1BC33FA7007A2B7D /* GalleryCell.swift in Sources */,
 				CE9C43061BC1D6CD00504B69 /* PreviewSupplementaryView.swift in Sources */,
 				CE9C43021BC1D6CD00504B69 /* ImagePreviewFlowLayout.swift in Sources */,
+				CE0031781C4DBE3F00037BAD /* ManageAccountTableViewController.swift in Sources */,
 				CE9C42FE1BC1D6CD00504B69 /* ImageAction.swift in Sources */,
 				CEB40EC11BD6B9EF00863F60 /* ImageViewController.m in Sources */,
 				CE9F9EEF1B802C1B0060D993 /* RestaurantDataViewController.swift in Sources */,
