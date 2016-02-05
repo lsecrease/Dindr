@@ -3,7 +3,7 @@
 //  Dindr
 //
 //  Created by lsecrease on 8/15/15.
-//  Copyright (c) 2015 Dindr. All rights reserved.
+//  Copyright (c) 2015. All rights reserved.
 //
 
 import UIKit
@@ -42,7 +42,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
         
         passwordTextField.resignFirstResponder()
         
-        view.showHUD(view)
+        //view.showHUD(view)
         
         PFUser.logInWithUsernameInBackground(username, password:password) {
             (user, error) -> Void in

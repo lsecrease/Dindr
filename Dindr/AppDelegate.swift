@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Stripe
 
 
 @UIApplicationMain
@@ -18,10 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+         User.initialize()
+         Restaurant.initialize()
+        
+        Stripe.setDefaultPublishableKey("pk_test_wSF2FSixopjY2k7tkvBLy8ox")
+        
         Parse.enableLocalDatastore()
         
         // Parse App ID
         Parse.setApplicationId("0rubnb7O4htTp2ebMAM2KXnPazFxilATgmZvKLde", clientKey: "0shAOvyF065qlhgquNoHwSlu7dLOtv6vavggY8fp")
+        
+       
         
         // Override point for customization after application launch.
         return true
@@ -48,7 +56,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
 
 
 }
+//class TabBar: UITabBar {
+    
+    //override func sizeThatFits(size: CGSize) -> CGSize {
+       // var sizeThatFits = super.sizeThatFits(size)
+       // sizeThatFits.height = 120
+        
+        //return sizeThatFits
+    //}
+//}
 

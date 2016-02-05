@@ -84,12 +84,28 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods/AFNetworking.framework"
+  install_framework "Pods/Auk.framework"
   install_framework "Pods/Bolts.framework"
+  install_framework "Pods/Eureka.framework"
+  install_framework "Pods/PagingMenuController.framework"
   install_framework "Pods/Parse.framework"
   install_framework "Pods/Spring.framework"
+  install_framework "Pods/Static.framework"
+  install_framework "Pods/Stripe.framework"
+  install_framework "Pods/SwiftChart.framework"
+  install_framework "Pods/moa.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods/AFNetworking.framework"
+  install_framework "Pods/Auk.framework"
   install_framework "Pods/Bolts.framework"
+  install_framework "Pods/Eureka.framework"
+  install_framework "Pods/PagingMenuController.framework"
   install_framework "Pods/Parse.framework"
   install_framework "Pods/Spring.framework"
+  install_framework "Pods/Static.framework"
+  install_framework "Pods/Stripe.framework"
+  install_framework "Pods/SwiftChart.framework"
+  install_framework "Pods/moa.framework"
 fi
